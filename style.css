@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+footer {
+    height: 5rem;
+    background: hsl(158, 36%, 37%);
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#box {
+    height: 28rem;
+    width: 37rem;
+    border-radius: .8rem;
+    overflow: hidden;
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+#content-box {
+    padding: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#type {
+    font-weight: 500;
+    font-size: 1rem;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: .4rem;
+}
+
+#product-title {
+    font-family: 'Fraunces', 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(212, 21%, 14%);
+    line-height: 2rem;
+}
+
+#description {
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    letter-spacing: .06rem;
+}
+
+#product-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#off-price {
+    font-family: 'Fraunces', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-right: 1.3rem;
+    color: hsl(158, 36%, 37%);
+    font-style: normal;
+}
+
+#regular-price {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 0.9rem;
+}
+
+#cart-icon {
+    margin-right: 0.5rem;
+}
+
+#add-to-cart-button {
+    border: 0;
+    border-radius: 0.5rem;
+    background: hsl(158, 36%, 37%);
+    color: white;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#add-to-cart-button:hover {
+    background: hsl(158, 37%, 19%);
+}
+
+#add-to-cart-button:active {
+    background: hsl(212, 21%, 14%);
+}
+
+@media (max-width: 640px) {
+    #box {
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        margin: 1rem;
+    }
+    #product-img-div {
+        overflow: hidden;
+    }
+    #product-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        content: url(images/image-product-mobile.jpg);
+    }
+}
+
+@media (min-width: 641px) {
+    #product-img {
+        height: 100%;
+    }
+}
